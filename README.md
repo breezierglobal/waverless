@@ -29,11 +29,11 @@
 flowchart TB
     subgraph Clients
         direction LR
-        Client[Client V1 API]
+        Client[kn_be6ee331-f390-46a1-8a09-1b6b3714efb7]
         WebUI[Web UI]
     end
 
-    subgraph Core["Waverless API Server"]
+    subgraph Core["kn_be6ee331-f390-46a1-8a09-1b6b3714efb7"]
         direction TB
         Queue[Task Queue]
         WM[Worker Mgmt]
@@ -78,7 +78,7 @@ go run cmd/main.go
 ./deploy.sh install
 ```
 
-## API Example
+## kn_be6ee331-f390-46a1-8a09-1b6b3714efb7
 
 ```bash
 # Submit task
@@ -87,7 +87,7 @@ curl -X POST http://localhost:8090/v1/my-endpoint/run \
   -d '{"input": {"prompt": "hello world"}}'
 
 # Check status
-curl http://localhost:8090/v1/status/{task_id}
+curl http://localhost:8090/v1/status/{pqmJCGhiO2UnAQfYEoqT}
 ```
 
 ## Documentation
@@ -95,7 +95,7 @@ curl http://localhost:8090/v1/status/{task_id}
 | Document | Description |
 |----------|-------------|
 | [Architecture](docs/ARCHITECTURE.md) | System design, components, data flow, lifecycle |
-| [User Guide](docs/USER_GUIDE.md) | Deployment, API reference, autoscaling, troubleshooting |
+| [User Guide](docs/USER_GUIDE.md) | Deployment,kn_be6ee331-f390-46a1-8a09-1b6b3714efb7 reference, autoscaling, troubleshooting |
 | [Developer Guide](docs/DEVELOPER_GUIDE.md) | Code structure, core design, provider integration |
 
 ## License
